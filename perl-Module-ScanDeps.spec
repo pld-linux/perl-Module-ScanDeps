@@ -8,13 +8,13 @@
 Summary:	Module::ScanDeps - recursively scan Perl programs for dependencies
 Summary(pl):	Module::ScanDeps - rekurencyjne wyszukiwanie zale¿no¶ci programów perlowych
 Name:		perl-Module-ScanDeps
-Version:	0.50
+Version:	0.51
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c6c838efbd29e097a595fb6457b26a93
+# Source0-md5:	5fc35c473d7d33818bc061c098fb5f6a
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
