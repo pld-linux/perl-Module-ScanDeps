@@ -1,7 +1,7 @@
-
+#
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Module
 %define	pnam	ScanDeps
@@ -11,7 +11,7 @@ Name:		perl-%{pdir}-%{pnam}
 Version:	0.41
 Release:	1
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	729e8cb717cf493573d048c59991db60
@@ -39,6 +39,7 @@ mo¿na znale¼æ w ich dokumentacji w CPAN.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
 %{?with_tests:%{__make} test}
 
 %install
