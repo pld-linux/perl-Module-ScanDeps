@@ -7,7 +7,7 @@
 %define	pnam	ScanDeps
 Summary:	Module::ScanDeps - recursively scan Perl programs for dependencies
 Summary(pl):	Module::ScanDeps - rekurencyjne wyszukiwanie zale¿no¶ci programów perlowych
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Module-ScanDeps
 Version:	0.43
 Release:	1
 # same as perl
