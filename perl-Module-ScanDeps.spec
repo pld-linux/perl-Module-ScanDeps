@@ -27,10 +27,10 @@ projects, PAR and App::Packer.  Please see their respective
 documentations on CPAN for further information.
 
 %description -l pl
-Stosowanie Module::ScanDeps polega na generowaniu binariów ze skryptów
-zawieraj±cych odpowiednie modu³y. Ten modu³ wspiera dwa takie
-projekty: PAR i App::Packer. Wiêcej informacji mo¿na znale¼æ w ich
-dokumentacji w CPAN.
+Zastosowanie Module::ScanDeps to generowanie ze skryptów plików
+wykonywalnych zawieraj±cych wszelkie potrzebne skryptowi modu³y.  Ten
+modu³ wspiera dwa takie projekty: PAR i App::Packer. Wiêcej informacji
+mo¿na znale¼æ w ich dokumentacji w CPAN.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
