@@ -8,13 +8,13 @@
 Summary:	Recursively scan Perl programs for dependencies
 Summary(pl):	Rekurencyjne wyszukiwanie zale¿no¶ci programów perlowych
 Name:		perl-%{pdir}-%{pnam}
-Version:	0.38
+Version:	0.39
 Release:	1
 # same as perl
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	33bcda794d5f319e336deb6366079f3d
+# Source0-md5:	4705d1626149efb4704e23cd090414b3
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
