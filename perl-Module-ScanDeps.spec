@@ -6,11 +6,12 @@
 %define	pdir	Module
 %define	pnam	ScanDeps
 Summary:	Recursively scan Perl programs for dependencies
-Summary(pl):	Rekurencyjnie wyszukuj zale¿no¶ci programów perlowych.
+Summary(pl):	Rekurencyjne wyszukiwanie zale¿no¶ci programów perlowych
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.30
 Release:	1
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	460e84cbdb138c37af7bd6afedaf54e1
@@ -24,6 +25,12 @@ An application of Module::ScanDeps is to generate executables from
 scripts that contains necessary modules; this module supports two such
 projects, PAR and App::Packer.  Please see their respective
 documentations on CPAN for further information.
+
+%description -l pl
+Stosowanie Module::ScanDeps polega na generowaniu binariów ze skryptów
+zawieraj±cych odpowiednie modu³y. Ten modu³ wspiera dwa takie
+projekty: PAR i App::Packer. Wiêcej informacji mo¿na znale¼æ w ich
+dokumentacji w CPAN.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
