@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Module
 %define	pnam	ScanDeps
-Summary:	Recursively scan Perl programs for dependencies
-Summary(pl):	Rekurencyjne wyszukiwanie zale¿no¶ci programów perlowych
+Summary:	Module::ScanDeps - recursively scan Perl programs for dependencies
+Summary(pl):	Module::ScanDeps - rekurencyjne wyszukiwanie zale¿no¶ci programów perlowych
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.40
 Release:	1
