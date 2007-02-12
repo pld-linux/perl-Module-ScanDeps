@@ -6,7 +6,7 @@
 %define		pdir	Module
 %define		pnam	ScanDeps
 Summary:	Module::ScanDeps - recursively scan Perl programs for dependencies
-Summary(pl):	Module::ScanDeps - rekurencyjne wyszukiwanie zaleøno∂ci programÛw perlowych
+Summary(pl.UTF-8):   Module::ScanDeps - rekurencyjne wyszukiwanie zale≈ºno≈õci program√≥w perlowych
 Name:		perl-Module-ScanDeps
 Version:	0.56
 Release:	1
@@ -26,11 +26,11 @@ scripts that contains necessary modules; this module supports two such
 projects, PAR and App::Packer.  Please see their respective
 documentations on CPAN for further information.
 
-%description -l pl
-Zastosowanie Module::ScanDeps to generowanie ze skryptÛw plikÛw
-wykonywalnych zawieraj±cych wszelkie potrzebne skryptowi modu≥y.  Ten
-modu≥ wspiera dwa takie projekty: PAR i App::Packer. WiÍcej informacji
-moøna znaleºÊ w ich dokumentacji w CPAN.
+%description -l pl.UTF-8
+Zastosowanie Module::ScanDeps to generowanie ze skrypt√≥w plik√≥w
+wykonywalnych zawierajƒÖcych wszelkie potrzebne skryptowi modu≈Çy.  Ten
+modu≈Ç wspiera dwa takie projekty: PAR i App::Packer. Wiƒôcej informacji
+mo≈ºna znale≈∫ƒá w ich dokumentacji w CPAN.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
