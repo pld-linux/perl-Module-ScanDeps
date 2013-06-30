@@ -8,16 +8,23 @@
 Summary:	Module::ScanDeps - recursively scan Perl programs for dependencies
 Summary(pl.UTF-8):	Module::ScanDeps - rekurencyjne wyszukiwanie zależności programów perlowych
 Name:		perl-Module-ScanDeps
-Version:	0.94
+Version:	1.10
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	6c2086e221206d5bcf538208d8b0a51f
+# Source0-md5:	f01f36a25bf372712ff6b1e4aad8d89c
 URL:		http://search.cpan.org/dist/Module-ScanDeps/
-BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-devel >= 1:5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-File-Temp
+BuildRequires:	perl-Module-Build
+BuildRequires:	perl-PathTools
+BuildRequires:	perl-Test-Simple
+BuildRequires:	perl-version
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -54,9 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README AUTHORS
-%{perl_vendorlib}/%{pdir}/*.pm
-%{perl_vendorlib}/%{pdir}/%{pnam}
-%attr(755,root,root)%{_bindir}/scandeps.pl
-%{_mandir}/man3/*
-%{_mandir}/man1/*
+%doc AUTHORS Changes README
+%attr(755,root,root) %{_bindir}/scandeps.pl
+%{perl_vendorlib}/Module/ScanDeps.pm
+%{perl_vendorlib}/Module/ScanDeps
+%{_mandir}/man1/scandeps.pl.1p*
+%{_mandir}/man3/Module::ScanDeps.3pm*
